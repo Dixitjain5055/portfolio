@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dixit Kumar Jain · Web Developer</title>
+  <meta name="description" content="Portfolio of Dixit Kumar Jain: web development, ecommerce and marketing work.">
+  <link rel="icon" href="assets/brand/profile-400.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <section class="hero" id="hero"></section>
+    <div class="marquee" id="marquee"></div>
+
+    <section id="work"><div class="wrap">
+      <div class="sec-head"><div><p class="eyebrow">Featured work</p><h2>Selected projects<span class="dot">.</span></h2></div>
+        <a class="btn" href="projects.html">View all projects</a></div>
+      <div class="cards" id="featured"></div>
+    </div></section>
+
+    <section id="experience"><div class="wrap">
+      <div class="sec-head"><div><p class="eyebrow">Experience</p><h2>Where I've worked<span class="dot">.</span></h2></div></div>
+      <div class="exp reveal"><div class="exp-tabs" id="expTabs"></div><div class="exp-panel" id="expPanel"></div></div>
+    </div></section>
+
+    <section id="insights"><div class="wrap">
+      <div class="sec-head"><div><p class="eyebrow">Insights</p><h2>Latest carousels<span class="dot">.</span></h2></div>
+        <a class="btn" href="project.html?id=carousel-series">See the series</a></div>
+      <div class="posts" id="posts"></div>
+    </div></section>
+
+    <section id="about"><div class="wrap about">
+      <div class="about-art reveal"><img src="assets/story/sudo-sheet.jpg" alt="Sudo, the Sudopers mascot"></div>
+      <div id="aboutText" class="reveal"></div>
+    </div></section>
+
+    <section id="skills"><div class="wrap">
+      <div class="sec-head"><div><p class="eyebrow">Skills</p><h2>What I work with<span class="dot">.</span></h2></div></div>
+      <div class="skill-grid" id="skills-grid"></div>
+    </div></section>
+
+    <section id="contact"><div class="wrap">
+      <div class="contact reveal">
+        <div><p class="eyebrow">Get in touch</p><h2>Let's build something<span class="dot">.</span></h2>
+          <p>Open to software engineering and web development roles. Send a message or reach me on GitHub.</p>
+          <div id="contactInfo"></div></div>
+        <form id="contactForm">
+          <input name="name" placeholder="Your name" required>
+          <input name="email" type="email" placeholder="Your email" required>
+          <input name="subject" placeholder="Subject">
+          <textarea name="message" rows="5" placeholder="Tell me about your project" required></textarea>
+          <button class="btn primary" type="submit">Send message →</button>
+          <small>Opens your email app with the message filled in.</small>
+        </form>
+      </div>
+    </div></section>
+  </main>
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+  <script>home();</script>
+</body>
+</html>
